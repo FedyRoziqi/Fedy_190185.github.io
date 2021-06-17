@@ -103,6 +103,7 @@ Kita bisa lihat bahwa dalam pemrograman, perhitungan data yang nilai sangat besa
                 Okay sekian dulu ya blog aku di sini. Untuk metode ini masih sangat banyak. Ya saya usahakan saya posting materi selanjutnya. Udah ya sekian dulu aja. Jangan bosan dengan blog aku siap tau bisa berguna buat kalian wkwk... Okay udah dulu ya. Jangan lupa like blog ku ya. Mantapp (y).
                 
 ### Referensi
+
 https://www.academia.edu/11633559/METODE_NUMERIK
 http://nurun.lecturer.uin-malang.ac.id/wp-content/uploads/sites/7/2011/09/Materi-9-Struktur-Atom-lanjutan.pdf
 https://materi78.files.wordpress.com/2013/06/atom_fis4.pdf
