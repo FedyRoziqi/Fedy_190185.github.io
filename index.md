@@ -1,7 +1,6 @@
 # Komputasi Numerik
 ## ~ Errors in Numerical Computations
 Atau yang biasa kita sebut sebagai nilai eror,lalu apasih nilai eror itu :
-
 Secara umum,terdapat dua sumber utama penyebab terjadinya error dalam perhitungan numerik, yaitu:
 ### 1.Error pembulatan ( round-off error )
 Perhitungan dengan metode numerik hampir selalu menggunakan bilangan riil.Masalah timbul apabila komputasi numerik dikerjakan oleh mesin (dalam hal ini dengan menggunakan komputer) karena semua bilangan riil tidak dapat disajikan secara tepat di dalam komputer. Keterbatasan komputer dalam menyajikan bilangan riil menghasilkan error yang disebut error pembulatan.
