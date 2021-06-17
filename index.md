@@ -64,7 +64,48 @@ Time : 24.734975616 detik
 
 b.      Teknik Pengurangan Operasi.
 
+```markdown
+for (double n = N; n >= 0; n--) {
+            A += (1/factorial(2*n+1));
+            if (n == 0)
+                A *= x;
+            else
+                A *= -(x*x);
+```
+Hasil Output :
+( Dengan N = 100 )
+A : -0.9879136391243737
+Time : 0.001511368 detik
 
+( Dengan N = 500 )
+A : -0.9879136391243737
+Time : 0.005108622 detik
+
+( Dengan N = 1000 )
+A : -0.9879136391243737
+Time : 0.008196645 detik
+
+( Dengan N = 5000 )
+A : -0.9879136391243737
+Time : 0.106724261 detik
+
+( Dengan N = 10000 )
+A : -0.9879136391243737
+Time : 0.415457556 detik
+
+ ( Dengan N = 50000 )
+A : -0.9879136391243737
+Time : 9.187904015 detik
+
+Dari hasil di atas ternyata membawa hasil yang berbeda dari kedua teknik di atas. Hal ini dapat dilihat bahwa pada saat nilai N = 500, pada model program (a) menampilkan nilai NaN alias tak definisi. Tetapi, untuk model program (b) akan muncul nilainya. Hal ini terjadi karena proses perhitungan pada model program (a) kemungkinan ada nilai yang infinity sehingga hasil akhirnya adalah NaN pada saat perhitungan nilai dengan Math.pow dan method factorial. Untuk model program (b) karena menggunakan teknik pengurangan operasi, maka hasil outputnya bisa tampilkan bahkan pada saat N = 50000. Jika dilihat, model program (a) sangat tidak efisien daripada model program (b) karena pada model (a) operasinya sangat banyak dan membutuhkan waktu yang banyak untuk masuk method Math dan factorial.
+Kita bisa lihat bahwa dalam pemrograman, perhitungan data yang nilai sangat besar seperti besar pertumbuhan ekonomi di Indonesia ini, besar energi radiasi matahari atau nilai yang sangat kecil seperti jari – jari atom, besar muatan listrik pada elektron, dan lain – lain sangat berpengaruh dalam program komputer. Tentunya, tipe data yang digunakan harus tepat. Misalkan jika perhitungan data aritmatika biasa seperti deret aritmatika cukup pakai INTEGER, menghitung nilai rata – rata mahasiswa menggunakan FLOAT karena bisa menghasilkan nilai desimal. Oleh karena itu, perlu diperhatikan tipe data-nya beserta bentuk formula yang dibuat seperti menghitung nilai cosinus dengan teknik pengurangan operasi.
+                Bagaimana pun juga, metode numerik ini sangat berguna untuk penerapan dalam kehidupan sehari – hari terutama dalam dunia teknik dan sains. Contoh yang sangat sederhana adalah ketika ingin memotong kayu dengan panjang 10 cm, saat mengukur ukuran harus diberi error sekitar 0,1 cm. Hal ini bertujuan agar saat memotong kayu akan menghasilkan ukuran pas 10 cm dan 0,1 cm ini akan hilang akibat gesekan / panas yang menyebabkan menjadi aus. Jadi, bisa dikatakan bahwa numerik ini berpengaruh dalam berbagai macam faktor. Misalkan pembangunan gedung tinggi harus memperhatikan pondasi-nya dan tingkat keretakan bahan yang dipakai ( lebih ke arah elastisitas bahan bangunan ).
+                Okay sekian dulu ya blog aku di sini. Untuk metode ini masih sangat banyak. Ya saya usahakan saya posting materi selanjutnya. Udah ya sekian dulu aja. Jangan bosan dengan blog aku siap tau bisa berguna buat kalian wkwk... Okay udah dulu ya. Jangan lupa like blog ku ya. Mantapp (y).
+                
+ ### Referensi
+https://www.academia.edu/11633559/METODE_NUMERIK
+http://nurun.lecturer.uin-malang.ac.id/wp-content/uploads/sites/7/2011/09/Materi-9-Struktur-Atom-lanjutan.pdf
+https://materi78.files.wordpress.com/2013/06/atom_fis4.pdf
  
 
 
