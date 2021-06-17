@@ -15,6 +15,32 @@ Contoh dalam sistem biner misalnya 1/10 = 0.000110011001100110011 00110011…2 d
 
 Galat pemotongan adalah galat yang ditimbulkan oleh pembatasan jumlah komputasi yang digunakan pada proses metode numerik. Banyak metode dalam metode numerik yang penurunan rumusnya menggunakan proses iterasi yang jumlahnya tak terhingga, sehingga untuk membatasi proses penghitungan, jumlah iterasi dibatasi sampai langkah ke n. Hasil penghitungan sampai langkah ke n akan menjadi hasil hampiran dan nilai penghitungan langkah n keatas akan menjadi galat pemotongan. dalam hal ini galat pemotongan kan menjadi sangat kecil sekali jika nilai n di perbesar. Konsekuensinya tentu saja jumlah proses penghitungannya akan semakin banyak.
 
+### 3. Cara atau penyebab lainnya antara lain :
+#### 1. Round off errors
+  Kesalahan ini biasanya akibat proses pembulatan dalam perhitungan. Secara umum, proses pembulatan ada 2 aturan yaitu :
+-          Jika digit yang dibulatkan kurang dari 5, maka tidak terjadi pembulatan.
+-          Sebaliknya, jika lebih dari 5, maka terjadi pembulatan yaitu dengan menambah satu.
+
+#### 2. Truncation errors
+  Kesalahan pemotongan biasanya terjadi karena pembuangan suku yang berderajat tinggi. Sebagai contoh untuk menghitung nilai cosinus dapat menggunakan deret Taylor
+  
+#### 3.  Range errors
+Untuk kesalahan ini berkaitan dengan batas dalam jangkauan representasi angka. Ini bisa dikatakan bahwa jika hasil perhitungan melebihi jangkauan, maka komputer akan menampilkan hasil yang tidak beraturan ( anggap saja hasil yang diperoleh diatur lagi oleh OS yang kita pakai ). Berikut ini saya kasih 2 contoh kasus untuk jenis kesalahan ini :
+-          Menghitung jari – jari atom Bohr.
+Untuk menghitung jari – jari atom Bohr dapat dirumuskan seperti ini :
+
+
+Dengan :
+
+
+Seandainya jika rumus itu dibuat dalam bentuk program, maka variabel r harus menggunakan tipe Double. Jika ingin bukti, berikut aku kasih bentuk program menghitung jari – jari atom Bohr dengan tipe variabel yang berbeda.
+
+a.      Menggunakan INTEGER.
+b.      Menggunakan FLOAT.
+c.      Menggunakan DOUBLE.
+
+Dari hasil di atas dapat diketahui bahwa penggunakan INTEGER dan FLOAT tidak bisa menampilkan hasil perhitungan yang tepat. Tetapi, penggunaan DOUBLE akan memberi hasil yang tepat sesuai perhitungan dari rumus tersebut. Hal ini terjadi karena jenis tipe data INTEGER memiliki jangkauan dan FLOAT punya jangkauan , Karena melebihi jangkauan, maka menampilkan hasil yang tidak sesuai
+
 You can use the [editor on GitHub](https://github.com/FedyRoziqi/fedyrz.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
@@ -51,4 +77,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-![image.png]( {https://2.bp.blogspot.com/-FBcxZP29cGQ/WEGiAuTfRFI/AAAAAAAAAJk/ncjcydhUhHUG8Juh5oUPyFAUJcjH_J3IwCLcB/s1600/1.png} )
+
