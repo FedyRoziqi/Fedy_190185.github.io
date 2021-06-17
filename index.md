@@ -45,3 +45,27 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
+1.  Diketahui:
+
+y = x2 + 5x + 6
+
+x=3
+
+h=0.3
+
+h=0.2
+
+h=0.1
+
+Ditanya :  Et, Ea, εt,  εa  ?
+
+     Jawab :
+
+Saat h=0,3
+– Approximate Value (Va)
+
+Capture
+
+1
+
+15171819
