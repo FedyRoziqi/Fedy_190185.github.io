@@ -51,4 +51,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-![image.png]( {https://www.google.com/url?sa=i&url=http%3A%2F%2Frdk.fidkom.uinjkt.ac.id%2Findex.php%2F2020%2F12%2F11%2Fhari-gunung-internasional-jadilah-penikmat-tanpa-merusak%2F&psig=AOvVaw3d0i5L6NSidMEdxbzI3-x_&ust=1624034964729000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCMDLkO2Pn_ECFQAAAAAdAAAAABAD} )
+![image.png]( {https://2.bp.blogspot.com/-FBcxZP29cGQ/WEGiAuTfRFI/AAAAAAAAAJk/ncjcydhUhHUG8Juh5oUPyFAUJcjH_J3IwCLcB/s1600/1.png} )
