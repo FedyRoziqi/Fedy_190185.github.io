@@ -35,9 +35,36 @@ Bentuk program dapat dibuat seperti di bawah ini :
 
 ```markdown
 for (double n = 0; n <= N; n++)
-            B += (Math.pow(-1, n))*(Math.pow(x, 2*n+1))/(factorial(2*n+1));
+            B += (Math.pow(-1, n))*(Math.pow(x, 2 * n+1))/(factorial(2*n+1));
 ```
- 
+ Hasil output :
+( Dengan N = 100 )
+A : -0.9881209821429402
+Time : 7.33534E-4 detik
+
+( Dengan N = 500 )
+A : NaN
+Time : 0.002157699 detik
+
+( Dengan N = 1000 )
+A : NaN
+Time : 0.005704589 detik
+
+( Dengan N = 5000 )
+A : NaN
+Time : 0.108811078 detik
+
+( Dengan N = 10000 )
+A : NaN
+Time : 0.418405214 detik
+
+( Dengan N = 50000 )
+A : NaN
+Time : 24.734975616 detik
+
+b.      Teknik Pengurangan Operasi.
+
+
  
 
 
