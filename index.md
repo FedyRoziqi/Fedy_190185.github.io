@@ -25,21 +25,23 @@ Galat pemotongan adalah galat yang ditimbulkan oleh pembatasan jumlah komputasi 
   Kesalahan pemotongan biasanya terjadi karena pembuangan suku yang berderajat tinggi. Sebagai contoh untuk menghitung nilai cosinus dapat menggunakan deret Taylor
   
 #### 3.  Range errors
-Untuk kesalahan ini berkaitan dengan batas dalam jangkauan representasi angka. Ini bisa dikatakan bahwa jika hasil perhitungan melebihi jangkauan, maka komputer akan menampilkan hasil yang tidak beraturan ( anggap saja hasil yang diperoleh diatur lagi oleh OS yang kita pakai ). Berikut ini saya kasih 2 contoh kasus untuk jenis kesalahan ini :
+Untuk kesalahan ini berkaitan dengan batas dalam jangkauan representasi angka. Ini bisa dikatakan bahwa jika hasil perhitungan melebihi jangkauan, maka komputer akan menampilkan hasil yang tidak beraturan ( anggap saja hasil yang diperoleh diatur lagi oleh OS yang kita pakai ).
 -          Menghitung jari – jari atom Bohr.
-Untuk menghitung jari – jari atom Bohr dapat dirumuskan seperti ini :
+-          Menghitung nilai sinus dengan teknik Taylor.
+Bentuk rumus-nya sudah ditulis sebelumnya. Disini akan diberi 2 teknik perhitungan dalam penggunaan deret Taylor.
+
+a.       Teknik Penggunaan Fungsi Math.
+Bentuk program dapat dibuat seperti di bawah ini :
+
+```markdown
+for (double n = 0; n <= N; n++)
+            B += (Math.pow(-1, n))*(Math.pow(x, 2*n+1))/(factorial(2*n+1));
+```
+ 
+ 
 
 
-Dengan :
 
-
-Seandainya jika rumus itu dibuat dalam bentuk program, maka variabel r harus menggunakan tipe Double. Jika ingin bukti, berikut aku kasih bentuk program menghitung jari – jari atom Bohr dengan tipe variabel yang berbeda.
-
-a.      Menggunakan INTEGER.
-b.      Menggunakan FLOAT.
-c.      Menggunakan DOUBLE.
-
-Dari hasil di atas dapat diketahui bahwa penggunakan INTEGER dan FLOAT tidak bisa menampilkan hasil perhitungan yang tepat. Tetapi, penggunaan DOUBLE akan memberi hasil yang tepat sesuai perhitungan dari rumus tersebut. Hal ini terjadi karena jenis tipe data INTEGER memiliki jangkauan dan FLOAT punya jangkauan , Karena melebihi jangkauan, maka menampilkan hasil yang tidak sesuai
 
 You can use the [editor on GitHub](https://github.com/FedyRoziqi/fedyrz.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
