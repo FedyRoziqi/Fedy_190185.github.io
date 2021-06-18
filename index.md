@@ -176,7 +176,8 @@ Karena persamaan garis AB0 melalui titik P1(x1,0), maka diperoleh :
 
 Sumber :
 
-[http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&ved=0CEUQFjAD&url=http%3A%2F%2Fmatematikaindo.
+[http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&ved=0CEUQFjAD&url=http%3A%2F%2F
+matematikaindo.
 files.wordpress.com%2F2010%2F04%2Fmetode-
 numerik-buku-ajar-unila.pdf&ei=cIA7UrhFi9KtB4-CgcgK&usg=AFQjCNGex_IcMyn18Q6O-ZmCHZ_E3638CQ&sig2=1C2ZFEGmJtwWu
 zqhyEtFnQ](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&ved=0CEUQFjAD&url=http%3A%2F%2Fmatematikaindo.files.wordpress.com%2F2010%2F04%2Fmetode-numerik-buku-ajar-unila.pdf&ei=cIA7UrhFi9KtB4-CgcgK&usg=AFQjCNGex_IcMyn18Q6O-ZmCHZ_E3638CQ&sig2=1C2ZFEGmJtwWuzqhyEtFnQ)
