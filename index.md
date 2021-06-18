@@ -112,8 +112,14 @@ Kita bisa lihat bahwa dalam pemrograman, perhitungan data yang nilai sangat besa
 # ~ Numerical Solutions of Algebraic and Transcendental Equestion
 
  Merupakan persamaan yang berisi fungsi transendental dari variabel yang diselesaikan. Persamaan seperti itu sering kali tidak memiliki solusi bentuk tertutup. Contohnya :
+ 
  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d65e56f9ce8a46059d20b8244c0adbbb4aa051c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:11.013ex; height:9.176ex;" alt="{\displaystyle {\begin{aligned}x&amp;=e^{-x}\\x&amp;=\cos x\\2^{x}&amp;=x^{2}\end{aligned}}}">
  
+ Di dalam kerja ilmiah dan teknik sering dijumpai suatu masalah berkenaan dengan upaya menyelesaikan persamaan yang berbentuk :
+ 
+ <img class="alignnone size-full wp-image-71" alt="rumus a1" src="http://blog.ub.ac.id/aldipradana/files/2013/09/rumus-a1.png" width="58" height="29">
+ <a href="http://blog.ub.ac.id/aldipradana/files/2013/09/rumus-a1.png"><img class="alignnone size-full wp-image-71" alt="rumus a1" src="http://blog.ub.ac.id/aldipradana/files/2013/09/rumus-a1.png" width="58" height="29"></a>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; persamaan (1.1)
  
 
 
