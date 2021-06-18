@@ -144,6 +144,57 @@ Sebaliknya bila <img class="alignnone size-full wp-image-77" alt="rumus 4b" src=
 
 <img class="alignnone size-full wp-image-79" alt="rumus 5" src="http://blog.ub.ac.id/aldipradana/files/2013/09/rumus-5.png" width="396" height="174">
 
+### METODE NEWTON
+
+Metode NEWTON didasarkan pada aproksimasi linear fungsi dan menggunakan prinsip kemiringan (Tangen) kurvanya.
+
+<img class="alignnone" alt="" src="http://blog.ub.ac.id/musthafaendybasranto/files/2013/09/12.png" width="497" height="241">
+
+Kalkulasi dengan metode Newton diawali dengan yang tidak terlalu jauh dari sebuah akar, bergerak sepanjang garis linear (kemiringan atau tangen garis) ke perpotongannya di sumbu-x, dan mengambilnya sebagai titik aproksimasi untuk yang berikutnya. Perlakuan ini diteruskan hingga nilai-nilai x dirasakan sukses cukup dekat ke fungsi bernilai nol. Skema kalkulasinya mengikuti segitiga yang dibangun dengan sudut inklinasi dari kemiringan garis pada kurva di yaitu
+
+<img class="alignnone" alt="" src="http://blog.ub.ac.id/musthafaendybasranto/files/2013/09/13.png" width="393" height="57">
+
+Aproksimasi berikutnya diteruskan dengan menghitung  x2 dengan skema yang sama dimana nilai  x3 digantikan  oleh x1. Secara umum metode Newton dirumuskan oleh skema berikut ini:
+
+<img class="alignnone" alt="" src="http://blog.ub.ac.id/musthafaendybasranto/files/2013/09/14.png" width="235" height="54">
+
+### METODE POSISI SALAH (REGULA FALSI)
+
+Untuk menghitung nilai akar dari f(x)=0 dapat digunakan metode Posisi salah/Regulasi Falsi. Aturan dari metode ini diterangkan secara geometri dalam Gambar. Dalam gambar yang dimaksud, sketsa grafik dari kurva dinyatakan oleh persamaan y=f(x). Akar dari f(x)=0 yang dicari dinyatakan oleh koordinat x dari titik P yang merupakan perpotongan dari kurva y=f(x) dengan sumbu x. Untuk menggunakan aturan RF, diperlukan dua titik A(α,f (α)) dan B0 (x0,f(x0)).
+
+<img class="alignnone" alt="" src="http://blog.ub.ac.id/musthafaendybasranto/files/2013/09/211-300x148.png" width="467" height="174">
+
+Proses selanjutnya adalah menghitung nilai x melalui persamaan garis AB0 yang memotong sumbu x di titik P1. Setelah itu dengan menggunakan koordinat titik P1 yakni (x1, 0) dapat ditentukan titik B1 dengan koordinat (x1, f(x1)) . Dengan demikian garis AB1 akan memotong sumbu x di titik P2 dengan koordinat (x2, 0). Demikian proses ini terus dilakukan hingga diperoleh kondisi Pn sangat dekat ke P yakni |Pn-P|<toleransi. Dari proses pencapaian nilai akar di titik P, dihasilkan barisan nilai-nilai x0,x1,x2,……,xn yang diharapkan akan konvergen ke absis x pada titik P, yaitu akar yang dicari dari persamaan yang diberikan.
+
+Persamaan garis AB0 adalah :
+
+<img class="alignnone" alt="" src="http://blog.ub.ac.id/musthafaendybasranto/files/2013/09/22.png" width="244" height="61">
+
+Karena persamaan garis AB0 melalui titik P1(x1,0), maka diperoleh :
+
+<img class="alignnone size-medium wp-image-82" alt="a" src="http://blog.ub.ac.id/aldipradana/files/2013/09/a-300x145.jpg" width="243" height="116">
+
+Demikian juga garis AB1 yakni
+
+<img class="alignnone size-medium wp-image-83" alt="b1" src="http://blog.ub.ac.id/aldipradana/files/2013/09/b1-300x64.jpg" width="300" height="64" srcset="http://blog.ub.ac.id/aldipradana/files/2013/09/b1-300x64.jpg 300w, http://blog.ub.ac.id/aldipradana/files/2013/09/b1.jpg 688w" sizes="(max-width: 300px) 100vw, 300px">
+
+Karena persamaan garis AB1 melalui titik P2(x2,0), maka diperoleh :
+
+<img class="alignnone size-medium wp-image-84" alt="b2" src="http://blog.ub.ac.id/aldipradana/files/2013/09/b2-300x105.jpg" width="300" height="105" srcset="http://blog.ub.ac.id/aldipradana/files/2013/09/b2-300x105.jpg 300w, http://blog.ub.ac.id/aldipradana/files/2013/09/b2.jpg 502w" sizes="(max-width: 300px) 100vw, 300px">
+
+Demikian proses ini diulang hingga mencapai titik P atau sangat dekat dengan P (titik yang mengandung nilai akar yang dicari).
+Jadi dapat disimpulkan rumus umum yang digunaka untuk menemukan nilai x adalah
+
+<img class="alignnone size-medium wp-image-85" alt="b3" src="http://blog.ub.ac.id/aldipradana/files/2013/09/b3-300x88.jpg" width="300" height="88" srcset="http://blog.ub.ac.id/aldipradana/files/2013/09/b3-300x88.jpg 300w, http://blog.ub.ac.id/aldipradana/files/2013/09/b3.jpg 554w" sizes="(max-width: 300px) 100vw, 300px">
+
+
+
+
+
+
+
+
+
 You can use the [editor on GitHub](https://github.com/FedyRoziqi/fedyrz.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
