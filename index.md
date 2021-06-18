@@ -121,7 +121,14 @@ Kita bisa lihat bahwa dalam pemrograman, perhitungan data yang nilai sangat besa
  <a href="http://blog.ub.ac.id/aldipradana/files/2013/09/rumus-a1.png"><img class="alignnone size-full wp-image-71" alt="rumus a1" src="http://blog.ub.ac.id/aldipradana/files/2013/09/rumus-a1.png" width="58" height="29"></a>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; persamaan (1.1)
  
+ Menyelesaikan persamaan (1.1) maksudnya adalah mencari suatu nilai berkenaan dengan peubah x sedemikian hingga persamaan tersebut bernilai benar. Nilai-nilai yang dimaksud biasanya disebut dengan nilai-nilai akar.
 
+Bila f(x) berbentuk fungsi polinom sederhana (kuadrat, pangkat tiga, atau pangkat empat) maka ada rumus-rumus aljabar (misalnya metode faktorisasi dan metode pembagian suku banyak), ang dapat digunakan untuk menentukan nilai-nilai akarnya. Sebaliknya, bila suatu polinom berderajat lebih tinggi atau berbentuk transenden seperti,
+
+<img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="http://blog.ub.ac.id/aldipradana/files/2013/09/a1.jpg" width="811" height="62">
+
+dan seterusnya, tidak tersedia metode aljabar untuk solusinya. Oleh karena itu harus ditempuh dengan cara aproksimasi.
+Dalam bagian ini, akan dibicarakan beberapa metode numerik untuk menyelesaikan permasalahan (1.1) dengan f(x)  adalah fungsi aljabar dan/atau transenden.
 
 You can use the [editor on GitHub](https://github.com/FedyRoziqi/fedyrz.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
