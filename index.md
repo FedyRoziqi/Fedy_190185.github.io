@@ -142,6 +142,7 @@ Bila <img class="alignnone size-full wp-image-77" alt="rumus 4b" src="http://blo
 
 Sebaliknya bila <img class="alignnone size-full wp-image-77" alt="rumus 4b" src="http://blog.ub.ac.id/aldipradana/files/2013/09/rumus-4b1.png" width="53" height="18"> tidak sama dengan 0 atau <img class="alignnone size-full wp-image-78" alt="rumus 4b2" src="http://blog.ub.ac.id/aldipradana/files/2013/09/rumus-4b2.png" width="32" height="17"> mendekati nilai 0 tetapi **tidak memenuhi suatu nilai toleransi yang diberikan**, maka berdasarkan Teorema 1.1 ada dua kemungkinan yakni nilai akar berada di antara a dan x0 atau nilai akar berada di antara x0 dan b. Dari salah satu kemungkinan ini, metode Biseksi kembali akan digunakan. Secara geometris, metode Biseksi yang dikemukan di atas diilustrasikan melalui gambar grafik berikut ini.
 
+<img class="alignnone size-full wp-image-79" alt="rumus 5" src="http://blog.ub.ac.id/aldipradana/files/2013/09/rumus-5.png" width="396" height="174">
 
 You can use the [editor on GitHub](https://github.com/FedyRoziqi/fedyrz.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
