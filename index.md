@@ -104,10 +104,12 @@ Kita bisa lihat bahwa dalam pemrograman, perhitungan data yang nilai sangat besa
                 
 ### Referensi
 
-[https://www.academia.edu/11633559/METODE_NUMERIK](https://www.academia.edu/11633559/METODE_NUMERIK)
+[https://docplayer.info/32828129-Galat-dalam-komputasi-numerik.html](https://docplayer.info/32828129-Galat-dalam-komputasi-numerik.html)
 [http://nurun.lecturer.uin-malang.ac.id/wp-content/uploads/sites/7/2011/09/Materi-9-Struktur-Atom-lanjutan.pdf](http://nurun.lecturer.uin-malang.ac.id/wp-content/uploads/sites/7/2011/09/Materi-9-Struktur-Atom-lanjutan.pdf)
-[https://materi78.files.wordpress.com/2013/06/atom_fis4.pdf](https://materi78.files.wordpress.com/2013/06/atom_fis4.pdf)
+[https://campus-siskom.blogspot.com/2018/02/metode-numerik-error-asal-dan.html](https://campus-siskom.blogspot.com/2018/02/metode-numerik-error-asal-dan.html)
  
+
+# ~ Numerical Solutions of Algebraic and Transcendental Equestion
 
 
 
@@ -148,4 +150,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-
+<img class="alignnone" alt="" src="http://blog.ub.ac.id/musthafaendybasranto/files/2013/09/211-300x148.png" width="467" height="174">
