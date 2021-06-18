@@ -176,15 +176,18 @@ Karena persamaan garis AB0 melalui titik P1(x1,0), maka diperoleh :
 
 Demikian juga garis AB1 yakni
 
+<a href="http://blog.ub.ac.id/aldipradana/files/2013/09/b1.jpg"><img class="alignnone size-medium wp-image-83" alt="b1" src="http://blog.ub.ac.id/aldipradana/files/2013/09/b1-300x64.jpg" width="300" height="64" srcset="http://blog.ub.ac.id/aldipradana/files/2013/09/b1-300x64.jpg 300w, http://blog.ub.ac.id/aldipradana/files/2013/09/b1.jpg 688w" sizes="(max-width: 300px) 100vw, 300px"></a>
 <img class="alignnone size-medium wp-image-83" alt="b1" src="http://blog.ub.ac.id/aldipradana/files/2013/09/b1-300x64.jpg" width="300" height="64" srcset="http://blog.ub.ac.id/aldipradana/files/2013/09/b1-300x64.jpg 300w, http://blog.ub.ac.id/aldipradana/files/2013/09/b1.jpg 688w" sizes="(max-width: 300px) 100vw, 300px">
 
 Karena persamaan garis AB1 melalui titik P2(x2,0), maka diperoleh :
 
+<a href="http://blog.ub.ac.id/aldipradana/files/2013/09/b2.jpg"><img class="alignnone size-medium wp-image-84" alt="b2" src="http://blog.ub.ac.id/aldipradana/files/2013/09/b2-300x105.jpg" width="300" height="105" srcset="http://blog.ub.ac.id/aldipradana/files/2013/09/b2-300x105.jpg 300w, http://blog.ub.ac.id/aldipradana/files/2013/09/b2.jpg 502w" sizes="(max-width: 300px) 100vw, 300px"></a>
 <img class="alignnone size-medium wp-image-84" alt="b2" src="http://blog.ub.ac.id/aldipradana/files/2013/09/b2-300x105.jpg" width="300" height="105" srcset="http://blog.ub.ac.id/aldipradana/files/2013/09/b2-300x105.jpg 300w, http://blog.ub.ac.id/aldipradana/files/2013/09/b2.jpg 502w" sizes="(max-width: 300px) 100vw, 300px">
 
 Demikian proses ini diulang hingga mencapai titik P atau sangat dekat dengan P (titik yang mengandung nilai akar yang dicari).
 Jadi dapat disimpulkan rumus umum yang digunaka untuk menemukan nilai x adalah
 
+<a href="http://blog.ub.ac.id/aldipradana/files/2013/09/b3.jpg"><img class="alignnone size-medium wp-image-85" alt="b3" src="http://blog.ub.ac.id/aldipradana/files/2013/09/b3-300x88.jpg" width="300" height="88" srcset="http://blog.ub.ac.id/aldipradana/files/2013/09/b3-300x88.jpg 300w, http://blog.ub.ac.id/aldipradana/files/2013/09/b3.jpg 554w" sizes="(max-width: 300px) 100vw, 300px"></a>
 <img class="alignnone size-medium wp-image-85" alt="b3" src="http://blog.ub.ac.id/aldipradana/files/2013/09/b3-300x88.jpg" width="300" height="88" srcset="http://blog.ub.ac.id/aldipradana/files/2013/09/b3-300x88.jpg 300w, http://blog.ub.ac.id/aldipradana/files/2013/09/b3.jpg 554w" sizes="(max-width: 300px) 100vw, 300px">
 
 
