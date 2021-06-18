@@ -111,7 +111,10 @@ Kita bisa lihat bahwa dalam pemrograman, perhitungan data yang nilai sangat besa
 
 # ~ Numerical Solutions of Algebraic and Transcendental Equestion
 
-
+ Merupakan persamaan yang berisi fungsi transendental dari variabel yang diselesaikan. Persamaan seperti itu sering kali tidak memiliki solusi bentuk tertutup. Contohnya :
+ <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d65e56f9ce8a46059d20b8244c0adbbb4aa051c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:11.013ex; height:9.176ex;" alt="{\displaystyle {\begin{aligned}x&amp;=e^{-x}\\x&amp;=\cos x\\2^{x}&amp;=x^{2}\end{aligned}}}">
+ 
+ 
 
 
 You can use the [editor on GitHub](https://github.com/FedyRoziqi/fedyrz.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
@@ -150,4 +153,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-<img class="alignnone" alt="" src="http://blog.ub.ac.id/musthafaendybasranto/files/2013/09/211-300x148.png" width="467" height="174">
+
