@@ -100,8 +100,67 @@ Time : 9.187904015 detik
 Dari hasil di atas ternyata membawa hasil yang berbeda dari kedua teknik di atas. Hal ini dapat dilihat bahwa pada saat nilai N = 500, pada model program (a) menampilkan nilai NaN alias tak definisi. Tetapi, untuk model program (b) akan muncul nilainya. Hal ini terjadi karena proses perhitungan pada model program (a) kemungkinan ada nilai yang infinity sehingga hasil akhirnya adalah NaN pada saat perhitungan nilai dengan Math.pow dan method factorial. Untuk model program (b) karena menggunakan teknik pengurangan operasi, maka hasil outputnya bisa tampilkan bahkan pada saat N = 50000. Jika dilihat, model program (a) sangat tidak efisien daripada model program (b) karena pada model (a) operasinya sangat banyak dan membutuhkan waktu yang banyak untuk masuk method Math dan factorial.
 Kita bisa lihat bahwa dalam pemrograman, perhitungan data yang nilai sangat besar seperti besar pertumbuhan ekonomi di Indonesia ini, besar energi radiasi matahari atau nilai yang sangat kecil seperti jari – jari atom, besar muatan listrik pada elektron, dan lain – lain sangat berpengaruh dalam program komputer. Tentunya, tipe data yang digunakan harus tepat. Misalkan jika perhitungan data aritmatika biasa seperti deret aritmatika cukup pakai INTEGER, menghitung nilai rata – rata mahasiswa menggunakan FLOAT karena bisa menghasilkan nilai desimal. Oleh karena itu, perlu diperhatikan tipe data-nya beserta bentuk formula yang dibuat seperti menghitung nilai cosinus dengan teknik pengurangan operasi.
                 Bagaimana pun juga, metode numerik ini sangat berguna untuk penerapan dalam kehidupan sehari – hari terutama dalam dunia teknik dan sains. Contoh yang sangat sederhana adalah ketika ingin memotong kayu dengan panjang 10 cm, saat mengukur ukuran harus diberi error sekitar 0,1 cm. Hal ini bertujuan agar saat memotong kayu akan menghasilkan ukuran pas 10 cm dan 0,1 cm ini akan hilang akibat gesekan / panas yang menyebabkan menjadi aus. Jadi, bisa dikatakan bahwa numerik ini berpengaruh dalam berbagai macam faktor. Misalkan pembangunan gedung tinggi harus memperhatikan pondasi-nya dan tingkat keretakan bahan yang dipakai ( lebih ke arah elastisitas bahan bangunan ).
-                Okay sekian dulu ya blog aku di sini. Untuk metode ini masih sangat banyak. Ya saya usahakan saya posting materi selanjutnya. Udah ya sekian dulu aja. Jangan bosan dengan blog aku siap tau bisa berguna buat kalian wkwk... Okay udah dulu ya. Jangan lupa like blog ku ya. Mantapp (y).
-                
+
+
+**A.        Round off errors**
+Kesalahan jenis ini terjadi akibat proses pembulatan dalam perhitungan. Secara umum, proses pembulatan ada 2 aturan yaitu :
+-          Jika digit yang dibulatkan kurang dari 5, maka tidak terjadi pembulatan.
+-          Sebaliknya, jika lebih dari 5, maka terjadi pembulatan yaitu dengan menambah satu.
+
+Contoh sederhananya adalah sebagai berikut :
+Pada perhitungan nilai x = 6/7, maka nilai x = 0,857142857143. Maka, jika terjadi pembulatan akan diperoleh nilai sebagai berikut :
+è x = 0,86 ( mendekati nilai 2 desimal ).
+è x = 0,8571 ( mendekati nilai 4 desimal ).
+è x = 0,857143 ( mendekati nilai 6 desimal ).
+è x = 0,85714286 ( mendekati nilai 8 desimal ).
+Dalam proses pembuatan, kesalahan yang timbul akibat pembulatan pada digit ke-n di belakang koma selalu bernilai :
+
+<img border="0" src="https://4.bp.blogspot.com/-MxUYTGlbku4/WEGiAv_LLlI/AAAAAAAAAJc/IFmLX6LSpM40bzbMYczy4TMaqwSvGehWwCEw/s1600/2.png">
+
+Dengan begitu, maka :
+è Untuk x = 0,86 (n = 2), maka Error = | 0,857142857143 – 0,86 | = 0,00285714286
+Dengan begitu terbukti bahwa Error ≤ 10-4/2  <-> 0,00285714286 ≤ 0,005.
+è Untuk x = 0,8571 (n = 4), maka Error = | 0,857142857143 – 0,8571 | = 0,000042857143
+Dengan begitu terbukti bahwa Error ≤ 10-4/2  <-> Error ≤ 0,00005.
+è Dan seterusnya. ( Anda bisa membuktikan untuk x = 0,857143 dan x = 0,85714286. )
+
+Kesalahan ini biasanya digunakan pada perhitungan data dari hasil percobaan praktikum seperti perhitungan nilai gravitasi dengan teknik perhitungan bandul, menentukan nilai tegangan permukaan, dan lain – lain. Masing – masing percobaan biasanya mengulang sebanyak 5 – 10 kali dengan tujuan untuk mengetahui kesalahan mutlak dan mengetahui apakah data yang diperoleh dari hasil praktikum itu tepat, teliti, masih ada kesalahan, atau bahkan error-nya sangat jauh dari perhitungan berdasarkan formula. Teknik ini adalah aprosikmasi kesalahan. Disinilah kegunaan untuk menentukan error suatu perhitungan dengan teknik ini.
+  
+**B.        Truncation errors**
+Kesalahan pemotongan biasanya terjadi karena pembuangan suku yang berderajat tinggi. Sebagai contoh untuk menghitung nilai cosinus dapat menggunakan deret Taylor yang dirumuskan di bawah ini :
+
+<img border="0" src="https://2.bp.blogspot.com/-lO_3sNjpw9o/WEGiAkUyqEI/AAAAAAAAAJg/pCN9cUeDVkU5V0TwJxb2Co8bqlVEF4adgCEw/s1600/3.png">
+
+Karena batas akhirnya tak hingga, maka dilakukan pemotongan suku agar perhitungannya lebih sederhana. Misalkan menentukan nilai sin(20) = 0.9129452507276277. Dengan deret Taylor ( hampir sama dengan konsep perhitungan nilai cos ) sampain = 100 akan diperoleh :
+
+<img border="0" height="61" src="https://4.bp.blogspot.com/-yY0gaJ_fzOI/WEGjWsoFQmI/AAAAAAAAAJw/DkY9lrPKTOAPwg5z4LwwcitX4J2txRazwCLcB/s400/4.png" width="400">
+
+<img border="0" height="72" src="https://2.bp.blogspot.com/-sZPexuG_0yE/WEGjWnlfHoI/AAAAAAAAAJ4/kjwa5ZlTTzoNGyKhJKK8Jiy1RI8Ry7bGACLcB/s320/5.png" width="320">
+
+Dengan begitu nilai errornya adalah
+
+<img border="0" height="37" src="https://3.bp.blogspot.com/-A6GqA939OY4/WEGjWjz51oI/AAAAAAAAAJ0/mQA6MmG7uBA3cggbZuR72J-y5J5IiAtRACEw/s400/6.png" width="400">
+
+Maka, dalam hal ini juga berpengaruh dalam proses perhitungan nilai numerik. Kesalahan ini berkaitan dengan kesalahan Range Errors karena kesalahan Range Errors ini berkaitan dengan batasan nilai representasi angka. Dalam dunia komputasi, penggunaan variabel berpengaruh pada hasil komputasi. Anggap saja untuk menghitung nilai yang mencapai > 109 harus menggunakan Float atau Double. Jika nilai tersebut menggunakan Integer, maka hasilnya akan acak atau bahkan memberi hasil <b style="mso-bidi-font-weight: normal;">NaN</b> alias tak definisi. Maka, dalam komputasi, anggap saja ∞ ditentukan sendiri misalkan mencapai N = 1000000.
+
+**C.        Range errors**
+
+Untuk kesalahan ini berkaitan dengan batas dalam jangkauan representasi angka. Ini bisa dikatakan bahwa jika hasil perhitungan melebihi jangkauan, maka komputer akan menampilkan hasil yang tidak beraturan ( anggap saja hasil yang diperoleh diatur lagi oleh OS yang kita pakai ). Berikut ini saya kasih 2 contoh kasus untuk jenis kesalahan ini :
+-          Menghitung jari – jari atom Bohr.
+Untuk menghitung jari – jari atom Bohr dapat dirumuskan seperti ini :
+
+
+Dengan :
+
+
+Seandainya jika rumus itu dibuat dalam bentuk program, maka variabel r harus menggunakan tipe Double. Jika ingin bukti, berikut aku kasih bentuk program menghitung jari – jari atom Bohr dengan tipe variabel yang berbeda.
+
+a.       Menggunakan INTEGER.
+b.      Menggunakan FLOAT.
+c.       Menggunakan DOUBLE.
+
+Dari hasil di atas dapat diketahui bahwa penggunakan INTEGER dan FLOAT tidak bisa menampilkan hasil perhitungan yang tepat. Tetapi, penggunaan DOUBLE akan memberi hasil yang tepat sesuai perhitungan dari rumus tersebut. Hal ini terjadi karena jenis tipe data INTEGER memiliki jangkauan ... dan FLOAT punya jangkauan ... , Karena melebihi jangkauan, maka menampilkan hasil yang tidak sesuai
+
 **Referensi**
 
 [https://docplayer.info/32828129-Galat-dalam-komputasi-numerik.html](https://docplayer.info/32828129-Galat-dalam-komputasi-numerik.html)
