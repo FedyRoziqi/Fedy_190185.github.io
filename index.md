@@ -276,6 +276,23 @@ Pada metode integrasi implisit nilai aktual <img src="https://wikimedia.org/api/
 
 J adalah matriks Jacobi. Pada sistem linear dan invarian terhadap waktu, maka matriks J = A
 
+contoh program lain di dalam metode euler 
+```markdown
+euler <- function(f, x0, y0, h, n){
+  x <- x0
+  y <- y0
+  
+  for(i in 1:n){
+    y0 <- y0 + h*f(x0, y0)
+    x0 <- x0 + h
+    x <- c(x,x0)
+    y <- c(y, y0)
+  }
+  
+  return(data.frame(x=x, y=y))
+}
+```
+
 **Metode Heun**
 Algoritma integrasi Heun memerlukan dua masukan yaitu <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9837644700489d04d977da272524cd5fda36f3d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.418ex; height:2.009ex;" alt="{\displaystyle u_{k}}"> dan <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3ab4fbdd181a4697fd87bb4b73926d99b1bc8d59" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.519ex; height:2.009ex;" alt="{\displaystyle u_{k-1}}"> 
 
