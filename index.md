@@ -944,7 +944,7 @@ dengan cara metode Heun, adalah pertama menghitung nilai antara <img src="https:
 
 dimana <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b26be3e694314bc90c3215047e4a2010c6ee184a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.339ex; height:2.176ex;" alt="{\displaystyle h}"> adalah ukuran langkah dan <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8326d2c5936361393522689d49de51e49dfa7c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.657ex; height:2.509ex;" alt="{\displaystyle t_{i+1}=t_{i}+h}"> 
 
-## Referensi
+## Reference
 
 [~ https://informatika.stei.itb.ac.id/~rinaldi.munir/MetNum/2010-2011/Solusi%20Persamaan%20Diferensial%20Biasa%20(Bagian%202).pdf](https://informatika.stei.itb.ac.id/~rinaldi.munir/MetNum/2010-2011/Solusi%20Persamaan%20Diferensial%20Biasa%20(Bagian%202).pdf)
 
@@ -962,7 +962,8 @@ zqhyEtFnQ](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rj
 [http://nurun.lecturer.uin-malang.ac.id/wp-content/uploads/sites/7/2011/09/Materi-9-Struktur-Atom-lanjutan.pdf](http://nurun.lecturer.uin-malang.ac.id/wp-content/uploads/sites/7/2011/09/Materi-9-Struktur-Atom-lanjutan.pdf)
 [https://campus-siskom.blogspot.com/2018/02/metode-numerik-error-asal-dan.html](https://campus-siskom.blogspot.com/2018/02/metode-numerik-error-asal-dan.html)
  
-
+## About Me
+Nama saya Fedy Roziqi (190411100185),saya adalah mahasiswa semester 4 di Universitas Trunojoyo Madura.
 
 
 
