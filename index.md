@@ -158,7 +158,7 @@ Aproksimasi berikutnya diteruskan dengan menghitung  x2 dengan skema yang sama d
 
 <img class="alignnone" alt="" src="http://blog.ub.ac.id/musthafaendybasranto/files/2013/09/14.png" width="235" height="54">
 
-### METODE POSISI SALAH (REGULA FALSI)
+**METODE POSISI SALAH (REGULA FALSI)**
 
 Untuk menghitung nilai akar dari f(x)=0 dapat digunakan metode Posisi salah/Regulasi Falsi. Aturan dari metode ini diterangkan secara geometri dalam Gambar. Dalam gambar yang dimaksud, sketsa grafik dari kurva dinyatakan oleh persamaan y=f(x). Akar dari f(x)=0 yang dicari dinyatakan oleh koordinat x dari titik P yang merupakan perpotongan dari kurva y=f(x) dengan sumbu x. Untuk menggunakan aturan RF, diperlukan dua titik A(α,f (α)) dan B0 (x0,f(x0)).
 
@@ -258,6 +258,56 @@ Sehingga error yang dihasilkan
 <img data-attachment-id="277" data-permalink="https://d4anm2017a.wordpress.com/2017/10/19/diferensiasi-numerik/error_sel_tengah/" data-orig-file="https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg" data-orig-size="195,82" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="error_sel_tengah" data-image-description="" data-medium-file="https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg?w=195" data-large-file="https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg?w=195" class="aligncenter size-full wp-image-277" src="https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg?w=748" alt="error_sel_tengah.jpg" srcset="https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg 195w, https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg?w=150 150w" sizes="(max-width: 195px) 100vw, 195px">
 
 <img loading="lazy" data-attachment-id="278" data-permalink="https://d4anm2017a.wordpress.com/2017/10/19/diferensiasi-numerik/soal_sel_tengah/" data-orig-file="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg" data-orig-size="847,580" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="soal_sel_tengah" data-image-description="" data-medium-file="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=300" data-large-file="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=748" class="  wp-image-278 aligncenter" src="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=529&amp;h=363" alt="soal_sel_tengah.jpg" width="529" height="363" srcset="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=529&amp;h=363 529w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=150&amp;h=103 150w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=300&amp;h=205 300w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=768&amp;h=526 768w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg 847w" sizes="(max-width: 529px) 100vw, 529px">
+
+# ~ Numerical Solution of System of Linear Algebraic Ecuations
+
+Sistem Persamaan Aljabar Linier (SPAL) atau dikenal juga sebagai ‘Persamaan   Aljabar   Linier   Serempak’   banyak   sekali   dijumpai dalam   perhitungan-perhitungan   teknik   kimia   yang   melibatkan solusi  numeris.  Beberapa  metode  solusi  yang  melibatkan  solusi SPAL,  di  antaranya  dalah:  solusi  Sisten  Persamaan  Aljabar  Non-Linier (SPANL), solusi Persamaan Diferensial Biasa (PDB), solusi persamaan  Diferensial  Parsial  (PDP),  Regresi  Linier  dan  Non-Linier, dll.
+
+Macam - macam Metode Numeriknya yaitu :
+
+**Eliminasi Gauss** 
+
+- Eliminasi Gauss adalah suatu metode untuk mengoperasikan nilai-nilai di dalam matriks sehingga menjadi matriks yang lebih sederhana lagi. 
+- Dengan melakukan operasi baris sehingga matriks tersebut menjadi matriks yang baris. Ini dapat digunakan sebagai salah satu metode penyelesaian persamaan linear dengan menggunakan matriks. 
+- Caranya dengan mengubah persamaan linear tersebut ke dalam matriks teraugmentasi dan mengoperasikannya. Setelah menjadi matriks baris, lakukan substitusi balik untuk mendapatkan nilai dari variabel-variabel tersebut.
+
+**ciri ciri Eliminasi Gauss**
+
+- Jika suatu baris tidak semua nol, maka bilangan pertama yang tidak nol adalah 1 (1 utama)
+- Baris nol terletak paling bawah
+- 1 utama baris berikutnya berada dikanan 1 utama baris diatasnya
+- Dibawah 1 utama harus nol.
+
+**cara Pengerjaan Eliminasi Gauss**
+- Metode Eliminasi Gauss merupakan metode yang dikembangkan dari metode eliminasi, yaitu menghilangkan atau mengurangi jumlah variable sehingga dapat diperoleh nilai dari suatu variable bebas
+- matrik diubah menjadi augmented matrik :
+
+<img border="0" data-original-height="253" data-original-width="353" height="229" src="https://1.bp.blogspot.com/-A5WDpPa0Trc/Xju-c7lXN2I/AAAAAAAAadI/ylmX6aa9A0gOe81G1_uv2PHmOCHeozECQCNcBGAsYHQ/s320/Slide5.jpg" width="320">
+
+ ubah matrik menjadi matrik segitiga atas atau segitiga bawah dengan menggunakan OBE (Operasi Baris Elementer).
+ 
+ <img border="0" data-original-height="260" data-original-width="918" height="179" src="https://1.bp.blogspot.com/-qQyodaiso7A/Xju-ci5UGXI/AAAAAAAAadE/Df8RikWTfX06l7GWHbS_iR4HLa2k5UUegCNcBGAsYHQ/s640/Slide6.jpg" width="640">
+ 
+ **Operasi Baris Elementer**
+ Metode dasar untuk menyelesaikan Sistem Persamaan Linier adalah mengganti sistem yang ada dengan sistem yang baru yang mempunyai himp solusi yang sama dan lebih mudah untuk diselesaikan
+
+Sistem yang baru diperoleh dengan serangkaian step yang menerapkan 3 tipe operasi. Operasi ini disebut Operasi Baris Elementer
+
+1. kalikan persamaan dengan nilai konstan yang bukan nol.
+2. menukar dua persamaan.
+3. menambahkan kelipatan dengan persamaan lain.
+
+<img border="0" data-original-height="720" data-original-width="960" height="480" src="https://1.bp.blogspot.com/-qpqLXRzNKrs/Xju_q4SLxWI/AAAAAAAAadc/T4RGWmdCZdgQXm8WkTw1yWGxZ2w823tKACNcBGAsYHQ/s640/Slide9.JPG" width="640">
+
+<img border="0" data-original-height="720" data-original-width="960" height="480" src="https://1.bp.blogspot.com/-NiHfRC-481k/Xju_qqSXRyI/AAAAAAAAadY/zm5UYrwQRUc0SOhTTVHM7-LJL1crp4eFQCNcBGAsYHQ/s640/Slide10.JPG" width="640">
+
+<img border="0" data-original-height="720" data-original-width="960" height="480" src="https://1.bp.blogspot.com/-R9x2uA24PYk/Xju_qwTOhTI/AAAAAAAAadg/vr93e2sQ3UE2dkJsRsT0SVSna6Aeqvl2ACNcBGAsYHQ/s640/Slide11.JPG" width="640">
+
+
+
+
+
+
 
 
 
