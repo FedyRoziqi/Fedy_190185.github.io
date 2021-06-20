@@ -303,7 +303,390 @@ Merupakan integrator dengan empat masukan.
 
 merupakan nilai tengah dari metode Euler eksplisit dan metode Euler implisit.
 
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce179f1ee061e052f254a491a9dbe7512e364d41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:39.261ex; height:2.843ex;" alt="{\displaystyle {\dot {x}}_{k-1}=Ax_{k-1}+Bu_{k-1}=f(x_{k-1},u_{k-1})}"> 
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce179f1ee061e052f254a491a9dbe7512e364d41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:39.261ex; height:2.843ex;" alt="{\displaystyle {\dot {x}}_{k-1}=Ax_{k-1}+Bu_{k-1}=f(x_{k-1},u_{k-1})}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3ece1f24cd7f13bf2488ec2e5cf1fdefc0f772a3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:28.758ex; height:2.843ex;" alt="{\displaystyle {\dot {x}}_{k}=Ax_{k}+Bu_{k}=f(x_{k},u_{k})}"> 
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c64069d0a7d341e11390cac1178b5856af6d7a09" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:26.638ex; height:5.343ex;" alt="{\displaystyle x_{k}=x_{k-1}+{h \over 2}({\dot {x}}_{k}+{\dot {x}}_{k+1})}">
+
+Sama halnya dengan metode Euler implisit, metode ini dapat menyebabkan lingkaran aljabar. Oleh karena itu, bentuk persamaan ini diubah menjadi seperti ini
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fea32d9c7dea988bb29126e2a375e17417275fe5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:50.618ex; height:5.176ex;" alt="{\displaystyle {\dot {x}}_{k-1}=Ax_{k-1}+{B \over 2}(u_{k-1}+u_{k})=f(x_{k-1},u_{k-1},u_{k})}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8ecf44f47bdee29bc63d9a1b9da8592a82f690e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:27.919ex; height:5.343ex;" alt="{\displaystyle x_{k}=x_{k-1}+h[I-{h \over 2}J]^{-1}{\dot {x}}_{k}}"> 
+
+**Metode Newton–Cotes**
+
+<table class="wikitable" style="margin:1em auto 1em auto; background:white">
+
+<tbody><tr>
+<th>No.</th>
+<th>Nama Aturan</th>
+<th>Rumus</th>
+<th>Estimasi Kesalahan
+</th></tr>
+<tr align="center">
+<td>1</td>
+<td><a href="/wiki/Trapesium_(geometri)" title="Trapesium (geometri)">Trapesium</a></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {b-a}{2}}(f_{0}+f_{1})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>b</mi>
+              <mo>−<!-- − --></mo>
+              <mi>a</mi>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {b-a}{2}}(f_{0}+f_{1})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/898874be93dd6abb959fcbef070b3ddcb08c96f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:14.941ex; height:5.343ex;" alt="{\displaystyle {\frac {b-a}{2}}(f_{0}+f_{1})}"></span></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -{\frac {(b-a)^{3}}{12}}\,f^{(2)}(\xi )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>−<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>b</mi>
+              <mo>−<!-- − --></mo>
+              <mi>a</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>3</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mn>12</mn>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>2</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>ξ<!-- ξ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -{\frac {(b-a)^{3}}{12}}\,f^{(2)}(\xi )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/832a38281b02d44403f66937c749653209eefe07" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:17.456ex; height:5.843ex;" alt="{\displaystyle -{\frac {(b-a)^{3}}{12}}\,f^{(2)}(\xi )}"></span>
+</td></tr>
+<tr align="center">
+<td>2</td>
+<td><a href="/wiki/Kaidah_Simpson" title="Kaidah Simpson">Simpson 1/3</a></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {b-a}{3}}(f_{0}+4f_{1}+f_{2})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>b</mi>
+              <mo>−<!-- − --></mo>
+              <mi>a</mi>
+            </mrow>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mn>4</mn>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {b-a}{3}}(f_{0}+4f_{1}+f_{2})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f0e59bd2336d992fca79d6bc72be3cc75f59a350" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:21.137ex; height:5.343ex;" alt="{\displaystyle {\frac {b-a}{3}}(f_{0}+4f_{1}+f_{2})}"></span></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -{\frac {(b-a)^{5}}{90}}\,f^{(4)}(\xi )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>−<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>b</mi>
+              <mo>−<!-- − --></mo>
+              <mi>a</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>5</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mn>90</mn>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>4</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>ξ<!-- ξ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -{\frac {(b-a)^{5}}{90}}\,f^{(4)}(\xi )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e6c3700425a20e7b2f6975207f689fd8cc139d09" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:17.456ex; height:5.843ex;" alt="{\displaystyle -{\frac {(b-a)^{5}}{90}}\,f^{(4)}(\xi )}"></span>
+</td></tr>
+<tr align="center">
+<td>3</td>
+<td><a href="/wiki/Kaidah_Simpson" title="Kaidah Simpson">Simpson 3/8</a></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {3(b-a)}{8}}(f_{0}+3f_{1}+3f_{2}+f_{3})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>3</mn>
+              <mo stretchy="false">(</mo>
+              <mi>b</mi>
+              <mo>−<!-- − --></mo>
+              <mi>a</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mn>8</mn>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mn>3</mn>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mn>3</mn>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {3(b-a)}{8}}(f_{0}+3f_{1}+3f_{2}+f_{3})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7142aae98d40aa460f706fb825531ff99883d5c1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:30.305ex; height:5.676ex;" alt="{\displaystyle {\frac {3(b-a)}{8}}(f_{0}+3f_{1}+3f_{2}+f_{3})}"></span></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -{\frac {3(b-a)^{5}}{80}}\,f^{(4)}(\xi )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>−<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>3</mn>
+              <mo stretchy="false">(</mo>
+              <mi>b</mi>
+              <mo>−<!-- − --></mo>
+              <mi>a</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>5</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mn>80</mn>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>4</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>ξ<!-- ξ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -{\frac {3(b-a)^{5}}{80}}\,f^{(4)}(\xi )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed57b1cd5a2f3daf1500910afccd87ae7669db95" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:18.619ex; height:5.843ex;" alt="{\displaystyle -{\frac {3(b-a)^{5}}{80}}\,f^{(4)}(\xi )}"></span>
+</td></tr>
+<tr align="center">
+<td>4</td>
+<td><a href="/wiki/Boole" class="mw-redirect" title="Boole">Boole</a> atau <a href="/wiki/Bode" class="mw-redirect" title="Bode">Bode</a></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {2(b-a)}{45}}(7f_{0}+32f_{1}+12f_{2}+32f_{3}+7f_{4})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>2</mn>
+              <mo stretchy="false">(</mo>
+              <mi>b</mi>
+              <mo>−<!-- − --></mo>
+              <mi>a</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mn>45</mn>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mn>7</mn>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mn>32</mn>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mn>12</mn>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mn>32</mn>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mn>7</mn>
+        <msub>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {2(b-a)}{45}}(7f_{0}+32f_{1}+12f_{2}+32f_{3}+7f_{4})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0aac892bb48dad85a8538d2b1f4006bf0dff2cf9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:42.314ex; height:5.843ex;" alt="{\displaystyle {\frac {2(b-a)}{45}}(7f_{0}+32f_{1}+12f_{2}+32f_{3}+7f_{4})}"></span></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -{\frac {8(b-a)^{7}}{945}}\,f^{(6)}(\xi )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>−<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>8</mn>
+              <mo stretchy="false">(</mo>
+              <mi>b</mi>
+              <mo>−<!-- − --></mo>
+              <mi>a</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>7</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mn>945</mn>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>6</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>ξ<!-- ξ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -{\frac {8(b-a)^{7}}{945}}\,f^{(6)}(\xi )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0299d1ce872031ad9c7295e7a769c100d4c8d57e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:18.619ex; height:6.009ex;" alt="{\displaystyle -{\frac {8(b-a)^{7}}{945}}\,f^{(6)}(\xi )}"></span>
+</td></tr></tbody></table>
 
 
 
