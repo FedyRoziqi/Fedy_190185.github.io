@@ -209,6 +209,27 @@ dan f'(x) didefinisikan dengan :
 
 <img data-attachment-id="265" data-permalink="https://d4anm2017a.wordpress.com/2017/10/19/diferensiasi-numerik/dif/" data-orig-file="https://d4anm2017a.files.wordpress.com/2017/10/dif.jpg" data-orig-size="310,127" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dif" data-image-description="" data-medium-file="https://d4anm2017a.files.wordpress.com/2017/10/dif.jpg?w=300" data-large-file="https://d4anm2017a.files.wordpress.com/2017/10/dif.jpg?w=310" class=" size-full wp-image-265 aligncenter" src="https://d4anm2017a.files.wordpress.com/2017/10/dif.jpg?w=748" alt="dif.jpg" srcset="https://d4anm2017a.files.wordpress.com/2017/10/dif.jpg 310w, https://d4anm2017a.files.wordpress.com/2017/10/dif.jpg?w=150 150w, https://d4anm2017a.files.wordpress.com/2017/10/dif.jpg?w=300 300w" sizes="(max-width: 310px) 100vw, 310px">
 
+contoh program pada metode ini :
+```markdown
+rk4sys <- function(f, x0, y0, h, n){
+  x <- x0
+  y <- y0
+  
+  values <- data.frame(x=x,t(y0))
+  for(i in 1:n){
+    k1 <- f(x0,y0)
+    k2 <- f(x0+0.5*h,y0+0.5*k1*h)
+    k3 <- f(x0+0.5*h,y0+0.5*k2*h)
+    k4 <- f(x0+h,y0+k3*h)
+    y0 <- y0 + (1/6)*(k1+2*k2+2*k3+k4)*h
+    x0 <- x0 + h
+    values <- rbind(values, data.frame(x=x0,t(y0)))
+  }
+  
+  return(values)
+}
+```
+
 Terdapat 3 jenis diferensiasi dalam metode numerik yaitu :
 
 **Metode Selisih Maju** 
@@ -258,6 +279,25 @@ Sehingga error yang dihasilkan
 <img data-attachment-id="277" data-permalink="https://d4anm2017a.wordpress.com/2017/10/19/diferensiasi-numerik/error_sel_tengah/" data-orig-file="https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg" data-orig-size="195,82" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="error_sel_tengah" data-image-description="" data-medium-file="https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg?w=195" data-large-file="https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg?w=195" class="aligncenter size-full wp-image-277" src="https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg?w=748" alt="error_sel_tengah.jpg" srcset="https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg 195w, https://d4anm2017a.files.wordpress.com/2017/10/error_sel_tengah.jpg?w=150 150w" sizes="(max-width: 195px) 100vw, 195px">
 
 <img loading="lazy" data-attachment-id="278" data-permalink="https://d4anm2017a.wordpress.com/2017/10/19/diferensiasi-numerik/soal_sel_tengah/" data-orig-file="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg" data-orig-size="847,580" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="soal_sel_tengah" data-image-description="" data-medium-file="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=300" data-large-file="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=748" class="  wp-image-278 aligncenter" src="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=529&amp;h=363" alt="soal_sel_tengah.jpg" width="529" height="363" srcset="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=529&amp;h=363 529w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=150&amp;h=103 150w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=300&amp;h=205 300w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=768&amp;h=526 768w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg 847w" sizes="(max-width: 529px) 100vw, 529px">
+
+Contoh program pada metode ini :
+```markdown
+midpt <- function(f, x0, y0, h, n){
+  x <- x0
+  y <- y0
+  
+  for(i in 1:n){
+    s1 <- y0 + f(x0,y0) * h/2
+    s2 <- h * f(x0+h/2,s1)
+    y0 <- y0 + s2
+    x0 <- x0 + h
+    x <- c(x, x0)
+    y <- c(y, y0)
+  }
+  
+  return(data.frame(x=x,y=y))
+}
+```
 
 # ~ Numerical Integration
 
@@ -363,6 +403,27 @@ Merupakan integrator dengan empat masukan.
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d97472d30e042c7eddbc6047301a226771aa8847" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:20.806ex; height:3.676ex;" alt="{\displaystyle x_{k}^{p3}=x_{k-1}+h{\dot {x}}_{k-0.5}^{p2}}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e6fdc1ddc1e929c5e1ae7a70f2f49cdfe9c69379" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:16.06ex; height:3.509ex;" alt="{\displaystyle {\dot {x}}_{k}^{p3}=f(x_{k}^{p3},u_{k})}">
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0389ac3fd60b7f9113005ab609caa69cf1bad324" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:47.033ex; height:5.343ex;" alt="{\displaystyle x_{k}=x_{k-1}+{h \over 6}({\dot {x}}_{k-1}+2{\dot {x}}_{k-0.5}^{p1}+2{\dot {x}}_{k-0.5}^{p2}+{\dot {x}}_{k}^{p3})}"> 
+
+contoh program pada metode ini :
+```markdown
+rk4 <- function(f, x0, y0, h, n){
+  x <- x0
+  y <- y0
+  
+  for(i in 1:n){
+    k1 <- f(x0,y0)
+    k2 <- f(x0+0.5*h,y0+0.5*k1*h)
+    k3 <- f(x0+0.5*h,y0+0.5*k2*h)
+    k4 <- f(x0+h,y0+k3*h)
+    y0 <- y0 + (1/6)*(k1+2*k2+2*k3+k4)*h
+    x0 <- x0 + h
+    x <- c(x, x0)
+    y <- c(y, y0)
+  }
+  
+  return(data.frame(x=x,y=y))
+}
+```
 
 **Metode Trapesium (Trapez)** 
 
