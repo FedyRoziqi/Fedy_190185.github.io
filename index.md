@@ -4,27 +4,27 @@ Atau yang biasa kita sebut sebagai nilai eror,lalu apasih nilai eror itu :
 
 Secara umum,terdapat dua sumber utama penyebab terjadinya error dalam perhitungan numerik, yaitu:
 
-### 1. Error pembulatan ( round-off error )
+**Error pembulatan ( round-off error )**
 Perhitungan dengan metode numerik hampir selalu menggunakan bilangan riil.Masalah timbul apabila komputasi numerik dikerjakan oleh mesin (dalam hal ini dengan menggunakan komputer) karena semua bilangan riil tidak dapat disajikan secara tepat di dalam komputer. Keterbatasan komputer dalam menyajikan bilangan riil menghasilkan error yang disebut error pembulatan.
 
 Sebagai contoh 1/6 = 0.166666666… tidak dapat dinyatakan secara tepat oleh komputer karena digit 6 panjangnya tidak terbatas. Komputer hanya mampu merepresentasikan sejumlah digit (atau bit dalam sistem biner) saja. Bilangan riil yang panjangnya melebihi jumlah digit (bit) yang dapat direpresentasikan oleh komputer dibulatkan ke bilangan terdekat. Misalnya sebuah komputer hanya dapat merepresentasikan bilangan riil dalam 6 digit angka berarti, maka representasi bilangan 1/6 = 0.1666666666… di dalam komputer 6-digit tersebut adalah 0.166667. Galat pembulatannya adalah 1/6 – 0.166667 = -0.000000333.
 
 Contoh dalam sistem biner misalnya 1/10 = 0.000110011001100110011 00110011…2 direpresentasikan di dalam komputer dalam jumlah bit yang terbatas. Kebanyakan komputer digital mempunyai dua buah cara penyajian bilangan riil, yaitu bilangan titik-tetap (fixed point) dan bilangan titik-kambang (floatingpoint). Dalam format bilangan titik -tetap setiap bilangan disajikan dengan jumlah tempat desimal yang tetap, misalnya 62.358, 0.013, 1.000. Sedangkan dalam format bilangan titik-kambang setiap bilangan disajikan dengan jumlah digit berarti yang sudah tetap, misalnya 0.6238 103 0.1714 ^10-13 atau ditulis juga 0.6238E+03 0.1714E-13. Digit-digit berarti di dalam format bilangan titik-kambang disebut juga angka bena (significant figure).
 
-### 2. Galat Pemotongan ( truncation error )
+**Galat Pemotongan ( truncation error )**
 
 Galat pemotongan adalah galat yang ditimbulkan oleh pembatasan jumlah komputasi yang digunakan pada proses metode numerik. Banyak metode dalam metode numerik yang penurunan rumusnya menggunakan proses iterasi yang jumlahnya tak terhingga, sehingga untuk membatasi proses penghitungan, jumlah iterasi dibatasi sampai langkah ke n. Hasil penghitungan sampai langkah ke n akan menjadi hasil hampiran dan nilai penghitungan langkah n keatas akan menjadi galat pemotongan. dalam hal ini galat pemotongan kan menjadi sangat kecil sekali jika nilai n di perbesar. Konsekuensinya tentu saja jumlah proses penghitungannya akan semakin banyak.
 
-### 3. Cara atau penyebab lainnya antara lain :
-#### 1. Round off errors
+**3. Cara atau penyebab lainnya antara lain :**
+**1. Round off errors**
   Kesalahan ini biasanya akibat proses pembulatan dalam perhitungan. Secara umum, proses pembulatan ada 2 aturan yaitu :
 -          Jika digit yang dibulatkan kurang dari 5, maka tidak terjadi pembulatan.
 -          Sebaliknya, jika lebih dari 5, maka terjadi pembulatan yaitu dengan menambah satu.
 
-#### 2. Truncation errors
+**2. Truncation errors**
   Kesalahan pemotongan biasanya terjadi karena pembuangan suku yang berderajat tinggi. Sebagai contoh untuk menghitung nilai cosinus dapat menggunakan deret Taylor
   
-#### 3.  Range errors
+**3.Range errors**
 Untuk kesalahan ini berkaitan dengan batas dalam jangkauan representasi angka. Ini bisa dikatakan bahwa jika hasil perhitungan melebihi jangkauan, maka komputer akan menampilkan hasil yang tidak beraturan ( anggap saja hasil yang diperoleh diatur lagi oleh OS yang kita pakai ).
 -          Menghitung jari – jari atom Bohr.
 -          Menghitung nilai sinus dengan teknik Taylor.
@@ -102,7 +102,7 @@ Kita bisa lihat bahwa dalam pemrograman, perhitungan data yang nilai sangat besa
                 Bagaimana pun juga, metode numerik ini sangat berguna untuk penerapan dalam kehidupan sehari – hari terutama dalam dunia teknik dan sains. Contoh yang sangat sederhana adalah ketika ingin memotong kayu dengan panjang 10 cm, saat mengukur ukuran harus diberi error sekitar 0,1 cm. Hal ini bertujuan agar saat memotong kayu akan menghasilkan ukuran pas 10 cm dan 0,1 cm ini akan hilang akibat gesekan / panas yang menyebabkan menjadi aus. Jadi, bisa dikatakan bahwa numerik ini berpengaruh dalam berbagai macam faktor. Misalkan pembangunan gedung tinggi harus memperhatikan pondasi-nya dan tingkat keretakan bahan yang dipakai ( lebih ke arah elastisitas bahan bangunan ).
                 Okay sekian dulu ya blog aku di sini. Untuk metode ini masih sangat banyak. Ya saya usahakan saya posting materi selanjutnya. Udah ya sekian dulu aja. Jangan bosan dengan blog aku siap tau bisa berguna buat kalian wkwk... Okay udah dulu ya. Jangan lupa like blog ku ya. Mantapp (y).
                 
-### Referensi
+**Referensi**
 
 [https://docplayer.info/32828129-Galat-dalam-komputasi-numerik.html](https://docplayer.info/32828129-Galat-dalam-komputasi-numerik.html)
 [http://nurun.lecturer.uin-malang.ac.id/wp-content/uploads/sites/7/2011/09/Materi-9-Struktur-Atom-lanjutan.pdf](http://nurun.lecturer.uin-malang.ac.id/wp-content/uploads/sites/7/2011/09/Materi-9-Struktur-Atom-lanjutan.pdf)
@@ -130,7 +130,7 @@ Bila f(x) berbentuk fungsi polinom sederhana (kuadrat, pangkat tiga, atau pangka
 dan seterusnya, tidak tersedia metode aljabar untuk solusinya. Oleh karena itu harus ditempuh dengan cara aproksimasi.
 Dalam bagian ini, akan dibicarakan beberapa metode numerik untuk menyelesaikan permasalahan (1.1) dengan f(x)  adalah fungsi aljabar dan/atau transenden.
 
-### METODE BISEKSI (BISECTION METHOD)
+**METODE BISEKSI (BISECTION METHOD)**
  
 Dinamakan metode biseksi (Bi Section) didasarkan atas teknis metode ini adalah “belah dua”. Metode Biseksi diformulasikan berdasarkan Teorema konsep dasar kalkulus : nilai antara dan deret Taylor Teorema 1.1 yang menyatakan bahwa : “Bila fungsi f(x) kontinu dalam selang/interval (a,b) dengan f(a) dan f(b) berlawanan tanda, maka f(α)=0 untuk suatu bilangan α sedemikian hingga a<α<b.
 
@@ -144,7 +144,7 @@ Sebaliknya bila <img class="alignnone size-full wp-image-77" alt="rumus 4b" src=
 
 <img class="alignnone size-full wp-image-79" alt="rumus 5" src="http://blog.ub.ac.id/aldipradana/files/2013/09/rumus-5.png" width="396" height="174">
 
-### METODE NEWTON
+**METODE NEWTON**
 
 Metode NEWTON didasarkan pada aproksimasi linear fungsi dan menggunakan prinsip kemiringan (Tangen) kurvanya.
 
@@ -182,7 +182,7 @@ files.wordpress.com%2F2010%2F04%2Fmetode-
 numerik-buku-ajar-unila.pdf&ei=cIA7UrhFi9KtB4-CgcgK&usg=AFQjCNGex_IcMyn18Q6O-ZmCHZ_E3638CQ&sig2=1C2ZFEGmJtwWu
 zqhyEtFnQ](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&ved=0CEUQFjAD&url=http%3A%2F%2Fmatematikaindo.files.wordpress.com%2F2010%2F04%2Fmetode-numerik-buku-ajar-unila.pdf&ei=cIA7UrhFi9KtB4-CgcgK&usg=AFQjCNGex_IcMyn18Q6O-ZmCHZ_E3638CQ&sig2=1C2ZFEGmJtwWuzqhyEtFnQ)
 
-# Numerical Differentiation
+# ~ Numerical Differentiation
 
  Persamaan diferensial merupakan persoalan matematis yang sering dijumpai dalam bidang teknik lingkungan. Sering kali suatu persamaan diferensial tidak dapat diselesaikan secara analitik sehingga diperlukan metode numerik untuk menyelesaikannya.
  
@@ -211,7 +211,7 @@ dan f'(x) didefinisikan dengan :
 
 Terdapat 3 jenis diferensiasi dalam metode numerik yaitu :
 
-### Metode Selisih Maju 
+**Metode Selisih Maju** 
 
 Metode selisih maju merupakan metode yang mengadopsi secara langsung definisi differensial
 
@@ -231,7 +231,7 @@ dari range x = [0,1] dengan h = 0,05
 
 <img data-attachment-id="271" data-permalink="https://d4anm2017a.wordpress.com/2017/10/19/diferensiasi-numerik/ans_sel_maju/" data-orig-file="https://d4anm2017a.files.wordpress.com/2017/10/ans_sel_maju-e1508385721608.jpg" data-orig-size="483,320" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ans_sel_maju" data-image-description="" data-medium-file="https://d4anm2017a.files.wordpress.com/2017/10/ans_sel_maju-e1508385721608.jpg?w=300" data-large-file="https://d4anm2017a.files.wordpress.com/2017/10/ans_sel_maju-e1508385721608.jpg?w=483" class=" size-full wp-image-271 aligncenter" src="https://d4anm2017a.files.wordpress.com/2017/10/ans_sel_maju-e1508385721608.jpg?w=748" alt="ans_sel_maju.jpg" srcset="https://d4anm2017a.files.wordpress.com/2017/10/ans_sel_maju-e1508385721608.jpg 483w, https://d4anm2017a.files.wordpress.com/2017/10/ans_sel_maju-e1508385721608.jpg?w=150 150w, https://d4anm2017a.files.wordpress.com/2017/10/ans_sel_maju-e1508385721608.jpg?w=300 300w" sizes="(max-width: 483px) 100vw, 483px">
 
-### Metode Selisih Mundur
+**Metode Selisih Mundur**
 
 Metode selisih mundur merupakan kebalikan dari metode selisih maju
 
@@ -239,7 +239,7 @@ Sehingga dapat didefinisikan dalam rumus berikut :
 
 <img data-attachment-id="268" data-permalink="https://d4anm2017a.wordpress.com/2017/10/19/diferensiasi-numerik/selisih_mundur/" data-orig-file="https://d4anm2017a.files.wordpress.com/2017/10/selisih_mundur.jpg" data-orig-size="303,193" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="selisih_mundur" data-image-description="" data-medium-file="https://d4anm2017a.files.wordpress.com/2017/10/selisih_mundur.jpg?w=300" data-large-file="https://d4anm2017a.files.wordpress.com/2017/10/selisih_mundur.jpg?w=303" class=" size-full wp-image-268 aligncenter" src="https://d4anm2017a.files.wordpress.com/2017/10/selisih_mundur.jpg?w=748" alt="selisih_mundur.jpg" srcset="https://d4anm2017a.files.wordpress.com/2017/10/selisih_mundur.jpg 303w, https://d4anm2017a.files.wordpress.com/2017/10/selisih_mundur.jpg?w=150 150w, https://d4anm2017a.files.wordpress.com/2017/10/selisih_mundur.jpg?w=300 300w" sizes="(max-width: 303px) 100vw, 303px">
 
-### Metode Selisih tengah
+**Metode Selisih tengah**
 
 Metode selisih tengah merupakan metode pengambilan perubahan dari dua titik sekitar dari titik yang diukur.Perhatikan selisih maju pada titik x-h adalah :
 
