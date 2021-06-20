@@ -1,4 +1,4 @@
-# Komputasi Numerik
+# Numerical Computing
 # ~ Errors in Numerical Computations
 Atau yang biasa kita sebut sebagai nilai eror,lalu apasih nilai eror itu :
 
