@@ -293,6 +293,27 @@ euler <- function(f, x0, y0, h, n){
 }
 ```
 
+```markdown
+# metode numerik
+f1 <- function(x,y){y/(2*x+1)}
+num <- euler(f1, x0=0, y0=1, h=0.05, n=100)
+
+# metode analitik
+f2 <- function(x){sqrt(2*x+1)}
+x0 <- 0
+y0 <- 1
+x <- x0
+y <- y0
+
+for(i in 1:100){
+  y0 <- f2(x0+0.05)
+  x0 <- x0+0.05
+  x <- c(x, x0)
+  y <- c(y, y0)
+}
+true <- data.frame(x=x, y=y)
+```
+
 **Metode Heun**
 Algoritma integrasi Heun memerlukan dua masukan yaitu <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9837644700489d04d977da272524cd5fda36f3d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.418ex; height:2.009ex;" alt="{\displaystyle u_{k}}"> dan <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3ab4fbdd181a4697fd87bb4b73926d99b1bc8d59" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.519ex; height:2.009ex;" alt="{\displaystyle u_{k-1}}"> 
 
@@ -301,6 +322,33 @@ Algoritma integrasi Heun memerlukan dua masukan yaitu <img src="https://wikimedi
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2daa0dd975f2173e23a3d1d92e890e6dd0b7f047" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:18.734ex; height:3.176ex;" alt="{\displaystyle x_{k}^{p}=x_{k-1}+h{\dot {x}}_{k-1}}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a820e9bf3ffa92a3753fafa5880a3160335cfa27" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:14.476ex; height:3.176ex;" alt="{\displaystyle {\dot {x}}_{k}^{p}=f(x_{k}^{p},u_{k})}">
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7fa4aab434af5944e0dd7aefe53bc6f90d80517e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:26.638ex; height:5.343ex;" alt="{\displaystyle x_{k}=x_{k-1}+{h \over 2}({\dot {x}}_{k-1}+{\dot {x}}_{k}^{p})}">
+
+contoh program metode ini
+
+```markdown
+heun <- function(f, x0, y0, h, n, iter=1){
+  x <- x0
+  y <- y0
+  
+  for(i in 1:n){
+    ypred0 <- f(x0,y0)
+    ypred1 <- y0 + h*ypred0
+    ypred2 <- f(x0+h,ypred1)
+    ykor <- y0 + h*(ypred0+ypred2)/2
+    if(iter!=1){
+      for(i in 1:iter){
+        ykor <- y0 + h*(ypred0+f(x0+h,ykor))/2
+      }
+    }
+    y0 <- ykor
+    x0 <- x0 + h
+    x <- c(x, x0)
+    y <- c(y, y0)
+  }
+  
+  return(data.frame(x=x,y=y))
+}
+```
 
 **Metode Runge-Kutta**
 
@@ -709,7 +757,6 @@ Sama halnya dengan metode Euler implisit, metode ini dapat menyebabkan lingkaran
 
 
 
-
 # ~ Numerical Solution of System of Linear Algebraic Ecuations
 
 Sistem Persamaan Aljabar Linier (SPAL) atau dikenal juga sebagai ‘Persamaan   Aljabar   Linier   Serempak’   banyak   sekali   dijumpai dalam   perhitungan-perhitungan   teknik   kimia   yang   melibatkan solusi  numeris.  Beberapa  metode  solusi  yang  melibatkan  solusi SPAL,  di  antaranya  dalah:  solusi  Sisten  Persamaan  Aljabar  Non-Linier (SPANL), solusi Persamaan Diferensial Biasa (PDB), solusi persamaan  Diferensial  Parsial  (PDP),  Regresi  Linier  dan  Non-Linier, dll.
@@ -790,40 +837,5 @@ dimana <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b26be3e
 
 
 
-You can use the [editor on GitHub](https://github.com/FedyRoziqi/fedyrz.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FedyRoziqi/fedyrz.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
 
