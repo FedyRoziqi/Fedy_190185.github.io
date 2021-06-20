@@ -259,6 +259,57 @@ Sehingga error yang dihasilkan
 
 <img loading="lazy" data-attachment-id="278" data-permalink="https://d4anm2017a.wordpress.com/2017/10/19/diferensiasi-numerik/soal_sel_tengah/" data-orig-file="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg" data-orig-size="847,580" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="soal_sel_tengah" data-image-description="" data-medium-file="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=300" data-large-file="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=748" class="  wp-image-278 aligncenter" src="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=529&amp;h=363" alt="soal_sel_tengah.jpg" width="529" height="363" srcset="https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=529&amp;h=363 529w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=150&amp;h=103 150w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=300&amp;h=205 300w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg?w=768&amp;h=526 768w, https://d4anm2017a.files.wordpress.com/2017/10/soal_sel_tengah.jpg 847w" sizes="(max-width: 529px) 100vw, 529px">
 
+# ~ Numerical Integration
+
+Metode integrasi numerik adalah suatu cara untuk menghitung aproksimasi luas daerah di bawah fungsi yang dimaksud pada selang yang diberikan. Berikut ini adalah beberapa metode integrasi numerik yang lazim digunakan :
+
+**Metode Euler Eksplisit**
+merupakan metode integrasi yang paling mudah 
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce179f1ee061e052f254a491a9dbe7512e364d41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:39.261ex; height:2.843ex;" alt="{\displaystyle {\dot {x}}_{k-1}=Ax_{k-1}+Bu_{k-1}=f(x_{k-1},u_{k-1})}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/17f33d249eefbffdc3d2919e7821782622d925cb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:18.734ex; height:2.509ex;" alt="{\displaystyle x_{k}=x_{k-1}+h{\dot {x}}_{k-1}}">
+
+**Metode Euler Implisit**
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5dc9446a2dc4b9560f842c945741e093ced41643" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:30.859ex; height:2.843ex;" alt="{\displaystyle {\dot {x}}_{k-1}=Ax_{k}+Bu_{k}=f(x_{k},u_{k})}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f71a09b7421f85ef000b88a1afaff9172b9dd574" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:16.634ex; height:2.509ex;" alt="{\displaystyle x_{k}=x_{k-1}+h{\dot {x}}_{k}}">
+
+Pada metode integrasi implisit nilai aktual <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d2b88c64c76a03611549fb9b4cf4ed060b56002" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.418ex; height:2.009ex;" alt="{\displaystyle x_{k}}"> juga digunakan sebagai umpan balik. Umpan balik ini dapat menyebabkan terjadinya lingkaran aljabar. Untuk menghindarinya maka bentuk persamaan diubah menjadi seperti ini
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5e3797b09546e064dff2182315ffc4915e583573" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:32.959ex; height:2.843ex;" alt="{\displaystyle {\dot {x}}_{k}=Ax_{k-1}+Bu_{k}=f(x_{k-1},u_{k})}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5c8d44a52caca3e6411978102f76493a5663e077" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.083ex; height:3.176ex;" alt="{\displaystyle x_{k}=x_{k-1}+h[I-hJ]^{-1}{\dot {x}}_{k}}"> 
+
+J adalah matriks Jacobi. Pada sistem linear dan invarian terhadap waktu, maka matriks J = A
+
+**Metode Heun**
+Algoritma integrasi Heun memerlukan dua masukan yaitu <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9837644700489d04d977da272524cd5fda36f3d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.418ex; height:2.009ex;" alt="{\displaystyle u_{k}}"> dan <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3ab4fbdd181a4697fd87bb4b73926d99b1bc8d59" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.519ex; height:2.009ex;" alt="{\displaystyle u_{k-1}}"> 
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce179f1ee061e052f254a491a9dbe7512e364d41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:39.261ex; height:2.843ex;" alt="{\displaystyle {\dot {x}}_{k-1}=Ax_{k-1}+Bu_{k-1}=f(x_{k-1},u_{k-1})}">
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2daa0dd975f2173e23a3d1d92e890e6dd0b7f047" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:18.734ex; height:3.176ex;" alt="{\displaystyle x_{k}^{p}=x_{k-1}+h{\dot {x}}_{k-1}}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a820e9bf3ffa92a3753fafa5880a3160335cfa27" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:14.476ex; height:3.176ex;" alt="{\displaystyle {\dot {x}}_{k}^{p}=f(x_{k}^{p},u_{k})}">
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7fa4aab434af5944e0dd7aefe53bc6f90d80517e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:26.638ex; height:5.343ex;" alt="{\displaystyle x_{k}=x_{k-1}+{h \over 2}({\dot {x}}_{k-1}+{\dot {x}}_{k}^{p})}">
+
+**Metode Runge-Kutta**
+
+Merupakan integrator dengan empat masukan.
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce179f1ee061e052f254a491a9dbe7512e364d41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:39.261ex; height:2.843ex;" alt="{\displaystyle {\dot {x}}_{k-1}=Ax_{k-1}+Bu_{k-1}=f(x_{k-1},u_{k-1})}">
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d92d90efaa36b7b54177554d63cc1f581996b7e9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:22.95ex; height:5.343ex;" alt="{\displaystyle x_{k-0.5}^{p1}=x_{k-1}+{h \over 2}{\dot {x}}_{k-1}}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/280f617f3e84dd807d202a2226a4daf2c5018e22" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:24.615ex; height:3.676ex;" alt="{\displaystyle {\dot {x}}_{k-0.5}^{p1}=f(x_{k-0.5}^{p1},u_{k-0.5})}">
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c380357ae13093517fd6f97d652ea5458224e044" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:24.23ex; height:5.343ex;" alt="{\displaystyle x_{k-0.5}^{p2}=x_{k-1}+{h \over 2}{\dot {x}}_{k-0.5}^{p1}}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/382b9580ac0ed989755a6bf13a98f6173f47e8ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:24.615ex; height:3.676ex;" alt="{\displaystyle {\dot {x}}_{k-0.5}^{p2}=f(x_{k-0.5}^{p2},u_{k-0.5})}">
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d97472d30e042c7eddbc6047301a226771aa8847" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:20.806ex; height:3.676ex;" alt="{\displaystyle x_{k}^{p3}=x_{k-1}+h{\dot {x}}_{k-0.5}^{p2}}"> <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e6fdc1ddc1e929c5e1ae7a70f2f49cdfe9c69379" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:16.06ex; height:3.509ex;" alt="{\displaystyle {\dot {x}}_{k}^{p3}=f(x_{k}^{p3},u_{k})}">
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0389ac3fd60b7f9113005ab609caa69cf1bad324" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:47.033ex; height:5.343ex;" alt="{\displaystyle x_{k}=x_{k-1}+{h \over 6}({\dot {x}}_{k-1}+2{\dot {x}}_{k-0.5}^{p1}+2{\dot {x}}_{k-0.5}^{p2}+{\dot {x}}_{k}^{p3})}"> 
+
+**Metode Trapesium (Trapez)** 
+
+merupakan nilai tengah dari metode Euler eksplisit dan metode Euler implisit.
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce179f1ee061e052f254a491a9dbe7512e364d41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:39.261ex; height:2.843ex;" alt="{\displaystyle {\dot {x}}_{k-1}=Ax_{k-1}+Bu_{k-1}=f(x_{k-1},u_{k-1})}"> 
+
+
+
+
+
+
 # ~ Numerical Solution of System of Linear Algebraic Ecuations
 
 Sistem Persamaan Aljabar Linier (SPAL) atau dikenal juga sebagai ‘Persamaan   Aljabar   Linier   Serempak’   banyak   sekali   dijumpai dalam   perhitungan-perhitungan   teknik   kimia   yang   melibatkan solusi  numeris.  Beberapa  metode  solusi  yang  melibatkan  solusi SPAL,  di  antaranya  dalah:  solusi  Sisten  Persamaan  Aljabar  Non-Linier (SPANL), solusi Persamaan Diferensial Biasa (PDB), solusi persamaan  Diferensial  Parsial  (PDP),  Regresi  Linier  dan  Non-Linier, dll.
@@ -325,6 +376,8 @@ dengan cara metode Heun, adalah pertama menghitung nilai antara <img src="https:
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/28dd4e6a8b0d676be1ad847893ee73608877e696" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:21.119ex; height:3.009ex;" alt="{\displaystyle {\tilde {y}}_{i+1}=y_{i}+hf(t_{i},y_{i})}">
 
 dimana <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b26be3e694314bc90c3215047e4a2010c6ee184a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.339ex; height:2.176ex;" alt="{\displaystyle h}"> adalah ukuran langkah dan <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8326d2c5936361393522689d49de51e49dfa7c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.657ex; height:2.509ex;" alt="{\displaystyle t_{i+1}=t_{i}+h}"> 
+
+
 
 
 
